@@ -93,6 +93,7 @@ scores = cross_val_score(model,features,labels)
 #scores = model.score(predict_data_array,predict_label_array)
 print("Step1 Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
 
+
 model.fit(training_data, training_label)
 
 
@@ -110,4 +111,4 @@ print("Step2 Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
 #     i = i + 1
 
 time3 = time.clock()
-#print time1-starttime,time2-time1,time3-time2
+print time1-starttime,time2-time1,time3-time2
