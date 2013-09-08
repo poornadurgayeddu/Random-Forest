@@ -94,21 +94,21 @@ scores = cross_val_score(model,features,labels)
 print("Step1 Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
 
 
-model.fit(training_data, training_label)
+# model.fit(training_data, training_label)
 
 
-# ------------------------------model.fit後のスコア--------------------------------
-#scores = model.score(predict_data_array,predict_label_array)
-scores = cross_val_score(model,features,labels)
-print("Step2 Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
+# # ------------------------------model.fit後のスコア--------------------------------
+# scores = model.score(predict_data_array,predict_label_array)
+# #scores = cross_val_score(model,features,labels)
+# print("Step2 Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
 
 
-#prediction = model.predict(test_data)
+# #prediction = model.predict(test_data)
 
-#i = 0
-# for label in prediction : 
-#     #print test_key[i], label  
-#     i = i + 1
+# #i = 0
+# # for label in prediction : 
+# #     #print test_key[i], label  
+# #     i = i + 1
 
-time3 = time.clock()
-print time1-starttime,time2-time1,time3-time2
+# time3 = time.clock()
+# print time1-starttime,time2-time1,time3-time2
